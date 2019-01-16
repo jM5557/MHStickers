@@ -1,0 +1,182 @@
+---
+---
+
+@import 'reset';
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+$pathToImg: '/assets/img/';
+
+body {
+   background: url(#{$pathToImg}light-bg.png) repeat center center;
+   background-color: #4c453b;
+   font-family: 'Crimson Text', serif;
+}
+
+button {
+   border-radius: 2px;
+   padding: 10px 22px;
+   font-weight: bolder;
+   background-color: #111;
+   background-color: rgba(0, 0, 0, 0.8);
+   border: none;
+   color: #fff;
+   font-weight: lighter;
+   font-size: 0.85rem;
+   letter-spacing: 1.25px;
+}
+
+#header {
+   z-index: 4;
+   background: url(#{$pathToImg}header-mon-banner.png) no-repeat center right -200px,
+               url(#{$pathToImg}header-bg.png) repeat center center;
+   background-size: auto auto, cover;
+   background-color: #222;
+   min-height: 275px;
+   position: relative;
+   border-bottom: none;
+
+   &:after {
+	   content: "";
+	   background: url(#{$pathToImg}divider-border.png) repeat-x center center;
+	   background-size: auto 100%;
+	   position: absolute;
+	   left: 0;
+	   right: 0;
+	   bottom: -10px;
+	   height: 25px;
+	   z-index: -1;
+	}
+
+	.pagename {
+	    position: absolute;
+	    top: 35px;
+	    left: 70px;
+	    color: #ff82ff;
+	    text-shadow: 0px 1px 1px #111;
+
+	    a {
+			width: 320px;
+		    text-indent: -9999px;
+		    background: url(#{$pathToImg}mh-logo-top.png) center center no-repeat;
+		    background-size: contain;
+		    height: 200px;
+		    display: block;
+	    }
+	}
+}
+
+#main_wrapper {
+	display: block;
+	position: relative;
+	color: #fff;
+}
+
+#sidebar {
+	background-color: #111;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 25px 25px 25px 25px;
+	bottom: 0;
+	max-width: 350px;
+	font-size: 1.05rem;
+	line-height: 2rem;
+	min-height: 100vh;
+
+	button {
+		display: block;
+		margin: 20px auto;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 15px;
+
+		&.enabled {
+			box-shadow: 0px 0px 24px -6px #cfee1d;
+		}
+	}
+}
+
+#side_content {
+	display: block;
+	padding: 40px;
+	padding-left: 420px;
+	text-align: left;
+}
+
+.sticker_wrapper {
+	display: inline-block;
+	width: 140px;
+	text-align: center;
+	margin: 10px;
+
+	img {
+		width: 100%; 
+    	height: 98px;
+    	cursor: pointer;
+    	transition: transform 0.2s ease;
+    	display: block;
+    	margin: auto;
+
+    	&:hover {
+    		transform: scale(1.25);
+    	}
+	}
+
+	input {
+		border-radius: 3px;
+		background-color: #2f1615;
+		color: #FFF;
+		border: none;
+		font-size: 0.85rem;
+		padding: 10px 15px;
+		display: block;
+		margin: auto;
+		text-align: center;
+		box-sizing: border-box;
+		max-width: 100%;
+	}
+}
+
+.alert_box {
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 370px;
+	background-color: #333;
+	padding: 15px;
+	animation: slideUp 3s 1;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#note {
+	background-color: #333;
+	padding: 15px;
+	border-radius: 3px;
+	text-align: center;
+	margin: 15px auto;
+
+	a {
+		display: block;
+		padding: 8px;
+		background-color: #111;
+		text-align: center;
+		font-size: 0.95rem;
+		color: #666;
+	}
+}
+
+@keyframes slideUp {
+	from, 100% {
+		transform: translateY(-10px);
+		opacity: 0;
+	}
+
+	20%, 80% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}

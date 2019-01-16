@@ -1,0 +1,1 @@
+<script src="{{ base.url | prepend: site.url }}/assets/main.js"></script>
