@@ -20,14 +20,14 @@ a, a:hover, a:visited, a:link { text-decoration: none; }
 
 button { cursor: pointer; }
 
-body { background: url(/assets/img/light-bg.png) repeat center center; background-color: #4c453b; font-family: 'Crimson Text', serif; }
+body { background: url(/MHStickers/assets/img/light-bg.png) repeat center center; background-color: #4c453b; font-family: 'Crimson Text', serif; }
 
 button { border-radius: 2px; padding: 10px 22px; font-weight: bolder; background-color: #111; background-color: rgba(0, 0, 0, 0.8); border: none; color: #fff; font-weight: lighter; font-size: 0.85rem; letter-spacing: 1.25px; }
 
-#header { z-index: 4; background: url(/assets/img/header-mon-banner.png) no-repeat center right -200px, url(/assets/img/header-bg.png) repeat center center; background-size: auto auto, cover; background-color: #222; min-height: 275px; position: relative; border-bottom: none; }
-#header:after { content: ""; background: url(/assets/img/divider-border.png) repeat-x center center; background-size: auto 100%; position: absolute; left: 0; right: 0; bottom: -10px; height: 25px; z-index: -1; }
+#header { z-index: 4; background: url(/MHStickers/assets/img/header-mon-banner.png) no-repeat center right -200px, url(/MHStickers/assets/img/header-bg.png) repeat center center; background-size: auto auto, cover; background-color: #222; min-height: 275px; position: relative; border-bottom: none; }
+#header:after { content: ""; background: url(/MHStickers/assets/img/divider-border.png) repeat-x center center; background-size: auto 100%; position: absolute; left: 0; right: 0; bottom: -10px; height: 25px; z-index: -1; }
 #header .pagename { position: absolute; top: 35px; left: 70px; color: #ff82ff; text-shadow: 0px 1px 1px #111; }
-#header .pagename a { width: 320px; text-indent: -9999px; background: url(/assets/img/mh-logo-top.png) center center no-repeat; background-size: contain; height: 200px; display: block; }
+#header .pagename a { width: 320px; text-indent: -9999px; background: url(/MHStickers/assets/img/mh-logo-top.png) center center no-repeat; background-size: contain; height: 200px; display: block; }
 
 #main_wrapper { display: block; position: relative; color: #fff; }
 
