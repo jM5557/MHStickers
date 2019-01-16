@@ -7,6 +7,9 @@
 
 $pathToImg: '/MHStickers/assets/img/';
 
+$bpMid: 1080px;
+$bpSmall: 720px;
+
 body {
    background: url(#{$pathToImg}light-bg.png) repeat center center;
    background-color: #4c453b;
@@ -95,6 +98,15 @@ button {
 			box-shadow: 0px 0px 24px -6px #cfee1d;
 		}
 	}
+
+	@media all and (max-width: #{$bpMid}) {
+		display: block;
+		max-width: unset;
+		min-height: unset;
+		position: relative;
+		top: auto; left: auto;
+		bottom: auto; right: auto;
+	}
 }
 
 #side_content {
@@ -102,6 +114,10 @@ button {
 	padding: 40px;
 	padding-left: 420px;
 	text-align: left;
+
+	@media all and (max-width: #{$bpMid}) {
+		padding: 0px 20px;
+	}
 }
 
 .sticker_wrapper {
