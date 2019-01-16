@@ -17,7 +17,7 @@ title: Monster Hunter World Stickers
 email: javierminchala@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Quick access page to view and select stickers to use over at /r/MonsterHunterWorld
-baseurl: "/MHStickers" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: raptorhunter6
 github_username:  jm5557
