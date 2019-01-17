@@ -24,9 +24,9 @@ layout: home
 			<img src="{{ site.baseurl }}{{ image.path }}" alt="image" class = "sticker__img" />
 			
 			{% if i < 10 %}
-				<input class = "sticker__text" value = "[](//#0{{ i }})" />
+				<input class = "sticker__text" value = "[](//#0{{ i }})" readonly/>
 				{% else %}
-				<input class = "sticker__text" value = "[](//#{{ i }})">
+				<input class = "sticker__text" value = "[](//#{{ i }})" readonly />
 			{% endif %}
 		</div>
 			
